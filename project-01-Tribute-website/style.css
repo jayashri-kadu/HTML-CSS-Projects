@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    min-height: 100vh;
+    background-color: rgb(183, 243, 243);
+    border: 30px solid rgb(3, 60, 60);
+    ;
+}
+
+.content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/*----------------- Top Section Start ------------- */
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-top: 100px;
+    color: #033C3C;
+}
+
+.top-section .image-container img {
+    width: 300px;
+    height: 350px;
+    border-radius: 50%;
+}
+
+.top-section .heading h1 {
+    font-size: 50px;
+
+}
+
+.top-section .heading h4 {
+    font-size: 20px;
+    text-align: end;
+
+}
+
+/*----------------- Top Section End ------------- */
+/*----------------- About Section Start ------------- */
+
+.about-section {
+    margin-top: 50px;
+}
+
+.about-section h2 {
+    font-size: 70px;
+    font-weight: 400;
+}
+
+.about-section p {
+    font-size: 20px;
+    margin-top: 30px;
+    letter-spacing: 2px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+
+/*----------------- About Section End ------------- */
+/*----------------- Boigraphy Section Start ------------- */
+.biography-section {
+    margin-top: 50px;
+
+}
+
+.biography-section h3 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.biography-section ul {
+    margin-left: 50px;
+}
+
+.biography-section li {
+    margin-bottom: 15px;
+}
+
+/*----------------- Boigraphy Section End ------------- */
+
+footer p {
+    text-align: end;
+    margin: 50px 0;
+}
+
+@media (max-width:786px) {
+    .content {
+        padding: 10px;
+
+    }
+
+    .top-section {
+        flex-direction: column-reverse;
+        margin: 10px 0;
+        align-items: center;
+        text-align: center;
+
+    }
+    .top-section .image-container{
+        margin-top: 10px;
+    }
+    .top-section .image-container img {
+        width: 70%;
+        height: auto;
+    }
+
+    .top-section .heading h1 {
+        font-size: 30px;
+
+    }
+
+    .top-section .heading h4 {
+        font-size: 15px;
+        text-align: center;
+
+    }
+/* --------------------------------- */
+    .about-section {
+        margin: 20px 0;
+    }
+    
+    .about-section h2 {
+        font-size: 37px;
+        text-align: center;
+    }
+    
+    .about-section p {
+        font-size: 12px;
+        margin-top: 15px;
+    }
+/* ----------------------------------------------- */
+    .biography-section {
+        margin-top: 20px;
+    
+    }
+    
+    .biography-section h3 {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    
+    .biography-section ul {
+        margin-left: 30px;
+    }
+    
+    .biography-section li {
+        margin-bottom: 15px;
+        font-size: 12px;
+    }
+    footer p {
+        text-align: center;
+        font-size: 12px;
+        margin: 30px 0;
+    }
+}
