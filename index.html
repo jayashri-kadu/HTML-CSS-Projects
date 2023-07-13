@@ -1,84 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .container{
-            width: 400px;
-            box-shadow: 0px 0px 15px 2px rgba(22, 22, 22, 0.25);
-            border-radius: 10px;
-            padding: 20px;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .projects{
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-            /* width: 15vw; */
-        }
-        .projects a{
-            text-decoration: none;
-            font-size: 20px;
-            color: #fff;
-            font-weight: 600;
-        }
-        .projects button{
-            padding: 10px 15px;
-            border: transparent;
-            transition: 0.3s ease-in-out;
-            box-shadow: 0px 0px 10px 2px rgba(22, 22, 22, 0.25);
-            border-radius: 7px;
-            
-        }
-        .project-01{
-            background-color: #C5006F;
-        }
-        .project-02{
-            background-color: #F60002;
-        }
-        .project-03{
-            background-color: #F76F00;
-        }
-        .project-04{
-            background-color: #E9C70A;
-        }
-        .project-05{
-            background-color: #01C101;
-        }
-        .project-06{
-            background-color: #009695;
-        }
-        .project-07{
-            background-color: #BB94B7;
-        }
-        .project-08{
-            background-color: #6D06A5;
-        }
-        .project-09{
-            background-color: #104577;
-        }
-    </style>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="Project-10_Portfolio/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://kit.fontawesome.com/13fc4010cd.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <div class="container">
-        <h1>HTML/CSS Projects</h1>
-    <div class="projects">        
-        <button class="project-01"><a href="project-01-Tribute-website/index.html" target="_blank">Project 1</a></button>
-        <button class="project-02"><a href="Project-02-Job Application/index.html" target="_blank">Project 2</a></button>
-        <button class="project-03"><a href="Project-03-Parallax-Website/index.html" target="_blank">Project 3</a></button>
-        <button class="project-04"><a href="project-04-landing_page/index.html" target="_blank">Project 4</a></button>
-        <button class="project-05"><a href="project-05-restaurant-site/index.html" target="_blank">Project 5</a></button>
-        <button class="project-06"><a href="Project-06-Music-Website-responsive/" target="_blank">Project 6</a></button>
-        <button class="project-07"><a href="Project-07-YouTube-Clone/" target="_blank">Project 7</a></button>
-        <button class="project-08"><a href="Project-08-JS Documentation/" target="_blank">Project 8</a></button>
-        <button class="project-09"><a href="Project-09-Blog-Website/" target="_blank">Project 9</a></button>
-    </div>
-    </div>
+    <header>
+        <nav class="container">
+            <div class="logo">Portfolio</div>
+            <ul>
+                <a href="#hero">
+                    <li>Home</li>
+                </a>
+                <a href="#Project">
+                    <li>Projects</li>
+                </a>
+                <a href="#Contact">
+                    <li>Contact</li>
+                </a>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <div class="container">
+                <div class="hero_image animate__animated animate__backInLeft">
+                    <img src="Project-10_Portfolio/images/business-women.jpg" alt="hero-img">
+                </div>
+                <div class="hero_content">
+                    <h1><span class="hi_text">Hi</span>, I am
+                        <span class="name_text">Jayashri Kadu</span>
+                    </h1>
+                    <h2>Frontend Developer</h2>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <h2>PROJECTS</h2>
+            <div class="container">
+                <div class="project_container">
+                    <div class="grid_item">
+                        <div class="card">
+                            <img src="Project-10_Portfolio/images/project_01.png" alt="project 1">
+                            <a href="project-01-Tribute-website/index.html" target="_blank">
+                                <div class="card_content">
+                                    <h3>Tribute Website</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="grid_item">
+                        <div class="card">
+                            <img src="Project-10_Portfolio/images/project_02.png" alt="project 2">
+                            <a href="Project-02-Job Application/index.html" target="_blank">
+                                <div class="card_content">
+                                    <h3>Job Application</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="grid_item">
+                        <div class="card">
+                            <img src="Project-10_Portfolio/images/project_03_a.png" alt="project 3">
+                            <a href="Project-03-Parallax-Website/index.html" target="_blank">
+                                <div class="card_content">
+                                    <h3>Parallax Website</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="grid_item">
+                        <div class="card">
+                            <img src="Project-10_Portfolio/images/project_04.png" alt="project 4">
+                            <a href="project-04-landing_page/index.html" target="_blank">
+                                <div class="card_content">
+                                    <h3>Landing Page</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="grid_item">
+                        <div class="card">
+                            <img src="Project-10_Portfolio/images/project_05.png" alt="project 5">
+                            <a href="project-05-restaurant-site/index.html" target="_blank">
+                                <div class="card_content">
+                                    <h3>Restaurant Website</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="grid_item">
+                        <div class="card">
+                            <img src="Project-10_Portfolio/images/project_06_a.png" alt="project 6">
+                            <a href="Project-06-Music-Website-responsive/" target="_blank">
+                                <div class="card_content">
+                                    <h3>Music Website</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="grid_item">
+                        <div class="card">
+                            <img src="Project-10_Portfolio/images/project_07.png" alt="project 7">
+                            <a href="Project-07-YouTube-Clone/" target="_blank">
+                                <div class="card_content">
+                                    <h3>Youtube Clone</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="grid_item">
+                        <div class="card">
+                            <img src="Project-10_Portfolio/images/project_08.png" alt="project 8">
+                            <a href="Project-08-JS Documentation/" target="_blank">
+                                <div class="card_content">
+                                    <h3>Javascript Document</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="grid_item">
+                        <div class="card">
+                            <img src="Project-10_Portfolio/images/project_09.png" alt="project 9">
+                            <a href="Project-09-Blog-Website/" target="_blank">
+                                <div class="card_content">
+                                    <h3>Blog Website</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <h2>Let's work together....</h2>
+                <div class="top_contact">
+                    <div class="contact_way">
+                        <i class="fab fa-linkedin"></i>
+                        <h3>LinkedIn</h3>
+                    </div>
+                    <div class="contact_way">
+                        <i class="fab fa-twitter"></i>
+                        <h3>Twitter</h3>
+                    </div>
+                    <div class="contact_way">
+                        <h3> @ Send Mail</h3>
+                    </div>
+                </div>
+                <div class="bottom_contact">
+                    <div class="contact_way">
+                        <i class="fab fa-github"></i>
+                        <h3>Github</h3>
+                    </div>
+                    <div class="contact_way">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <h3>Call Me</h3>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            Created by Jayashri Kadu
+        </div>
+    </footer>
 </body>
+
 </html>
